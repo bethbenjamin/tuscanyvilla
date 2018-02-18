@@ -1,18 +1,65 @@
 ﻿.container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3);
     grid-template-rows: auto;
-    grid-gap: 0px;
+    grid-gap: -10px;
     margin: auto;
     width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/*button controls*/
+.button {
+    background-color: #474E5D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
+.button1 {
+    padding: 10px 24px;
+}
+
+.button2 {
+    padding: 10px 24px;
+    background-color: white;
+    color: black;
+}
+
+
+#topvilla {
+    position: relative;
+    width: 100%;
+}
+
+.villaoverimage {
+    position: absolute;
+    top: 24%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+.villaoverimagesub {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-weight: lighter;
+    font-size: 16px;
+}
 
 /*logo row 1*/
 section.grid-item.grid-item-1 {
     grid-column: 1 / span 3;
-    background-color: dimgray;
-
+    background-color: #474E5D;
+    font-size: 12px;
 }
 /*nav bar*/
 ul {
@@ -21,6 +68,7 @@ ul {
     color: white;
     margin: 14px;
     padding: 14px;
+    letter-spacing:3px;
 }
 
 li {
@@ -35,29 +83,40 @@ li {
 
 img#topvilla {
     height: 350px;
-    width: 844px;
+    width: 847px;
 }
+
 img#map {
     height: 350px;
-  
 }
-/*tuscany villa row 2*/
+/*row 2 tuscany villa picture / map picture*/
 section.grid-item.grid-item-2 {
     grid-column: 1 / span 3;
     background-color: white;
-   
-
+    font-size: 1px;
 }
 /*row 3 location header*/
 section.grid-item.grid-item-3 {
     grid-column: 1/ span 3;
-    background-color: dimgray;
+    background-color: #474E5D;
+   
 }
 
-.location {
-    padding: 70px 0;
-    border: 3px solid green;
+.locationheader {
+    font-weight:100;
+    padding: 5px 0;
+    padding-bottom:22px;
+    letter-spacing: 2px;
     text-align: center;
+    font-size: 14px;
+   
+}
+
+.locationsubtext {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing:0px;
 }
 
 
@@ -65,51 +124,173 @@ section.grid-item.grid-item-3 {
 section.grid-item.grid-item-4 {
     grid-column: 1/ span 3;
     background-color: white;
+    color: black;
+    font-size: 14px;
+    padding-left: 20px;
 }
+
+img#location1image {
+    float: right;
+    color: black;
+}
+
+
 /*row 5 location 2*/
 section.grid-item.grid-item-5 {
     grid-column: 1 / span 3;
-    background-color: dimgray;
+    background-color: #474E5D;
+    padding-right: 35px;
+}
+
+img#location2image {
+    float: left;
+    color: black;
+    font-size: 14px;
 }
 /*row 6 location 3*/
 section.grid-item.grid-item-6 {
     grid-column: 1 / span 3;
     background-color: white;
+    color: black;
+    padding-left: 20px;
+}
+
+img#location3image {
+    float: right;
+    color: black;
+    font-size: 14px;
 }
 /*row 7 ammenities header*/
 section.grid-item.grid-item-7 {
     grid-column: 1 / span 3;
-    background-color: dimgray;
+    background-color: #474E5D;
 }
-/* row 8 ammenities 3x3 grid*/
+
+.amenitiesheader {
+    font-weight: 100;
+    padding: 5px 0;
+    padding-bottom: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.amenitiessubtext {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+/* row 8 ammenities 1st row x 3 grid*/
 section.grid-item.grid-item-8 {
-    grid-column: 1 / span 3;
-    background-color: white;
+    grid-column: 1 / span 1;
+    background-color: blue;
 }
-/*row 9 reviews header*/
+/*row 8 ammenities 1 row 2 of 3 grid*/
 section.grid-item.grid-item-9 {
-    grid-column: 1 / span 3;
-    background-color: dimgray;
+    grid-column: 2 / span 1;
+    background-color: green;
 }
-/*row 10 reviews slider*/
+
+/*row 8 ammenities 1 row  3x 3 grid*/
 section.grid-item.grid-item-10 {
-    grid-column: 1 / span 3;
-    background-color: white;
+    grid-column: 3 / span 1;
+    background-color: yellow;
 }
-/*row 11 contact header*/
+/* row 9 ammenities 2nd row  1x 3 grid*/
 section.grid-item.grid-item-11 {
-    grid-column: 1 / span 3;
-    background-color: dimgray;
+    grid-column: 1 / span 1;
+    background-color: blue;
 }
-/*row 12 address form*/
+/*row 9 ammenities 2nd row  2x 3 grid*/
 section.grid-item.grid-item-12 {
+    grid-column: 2 / span 1;
+    background-color: green;
+}
+
+/*row 9 ammenities 2nd row 3 x 3 grid*/
+section.grid-item.grid-item-13 {
+    grid-column: 3 / span 1;
+    background-color: yellow;
+}
+/* row 10 ammenities 1st row x 3 grid*/
+section.grid-item.grid-item-14 {
+    grid-column: 1 / span 1;
+    background-color: blue;
+}
+/*row 10 ammenities 2nd row x 3 grid*/
+section.grid-item.grid-item-15 {
+    grid-column: 2 / span 1;
+    background-color: green;
+}
+
+/*row 10 ammenities 3rd row x 3 grid*/
+section.grid-item.grid-item-16 {
+    grid-column: 3 / span 1;
+    background-color: yellow;
+}
+
+
+
+
+
+/*row 11 reviews header*/
+section.grid-item.grid-item-17 {
+    grid-column: 1 / span 3;
+    background-color: #474E5D;
+}
+
+.reviewheader {
+    font-weight: 100;
+    padding: 5px 0;
+    padding-bottom: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.reviewsubtext {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+/*row 12 review slider*/
+section.grid-item.grid-item-18 {
     grid-column: 1 / span 3;
     background-color: white;
 }
-/*footer*/
-section.grid-item.grid-item-13 {
+/*row 13 contact header*/
+section.grid-item.grid-item-19 {
     grid-column: 1 / span 3;
-    background-color: dimgray;
+    background-color: #474E5D;
+}
+
+.contactheader {
+    font-weight: 100;
+    padding: 5px 0;
+    padding-bottom: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contactsubtext {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+/*row 14 contact form*/
+section.grid-item.grid-item-20 {
+    grid-column: 1 / span 3;
+    background-color: white;
+}
+/*row 15 footer*/
+section.grid-item.grid-item-21 {
+    grid-column: 1 / span 3;
+    background-color: #474E5D;
 }
 
 p.center {
